@@ -1,0 +1,358 @@
+﻿<robot name="UMI_RTX_BM14W4" >
+
+ <link name="base_link"> 
+   <inertial>
+    <origin xyz="0 0 0." rpy="0 0 0"/>
+    <mass value="100"/>
+    <inertia ixx="1000"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+  </inertial>
+<visual>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <box size="0.45 0.6 0.03" />
+    </geometry>
+    <material name="red">
+      <color rgba="0.99 0.005 0.066 1.0"/>
+    </material>
+  </visual>
+<collision>
+    <origin xyz="0 0 0." rpy="0 0 0"/>
+    <geometry>
+      <box size="0.45 0.6 0.03" />
+    </geometry>
+  </collision>
+</link>
+
+ <link name="frame1"> 
+<inertial>
+    <origin xyz="0 -0.045 0" rpy="0 0 0"/>
+    <mass value="100"/>
+    <inertia ixx="1000"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+  </inertial>
+<visual>
+<origin xyz="-0.045 0 0" rpy="0 0 -1.57079632679489662"/>
+    <geometry>
+      <mesh filename="package://umirtx_description/meshes/frame1.stl"/>
+    </geometry>
+    <material name="pink">
+      <color rgba="0.962 0.222 0.511 1.0"/>
+    </material>
+  </visual>
+<collision>
+<origin xyz="-0.045 0 0" rpy="0 0 -1.57079632679489662"/>
+    <geometry>
+      <mesh filename="package://umirtx_description/meshes/frame1.stl"/>
+    </geometry>
+  </collision>
+</link>
+
+ <link name="frame2">
+<inertial>
+<origin xyz="0.06 0 0" rpy="0 0 0" />
+    <mass value="10"/>
+    <inertia ixx="1000"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
+  </inertial>
+<visual>
+<origin xyz="0.06 0 0" rpy="0 0 1.5708" />
+    <geometry>
+      <mesh filename="package://umirtx_description/meshes/frame2.stl"/>
+    </geometry>
+    <material name="purple">
+      <color rgba="0.737 0.422 0.892 1.0"/>
+    </material>
+  </visual>
+<collision>
+<origin xyz="0.06 0 0" rpy="0 0 1.57079632679489662" />
+    <geometry>
+      <mesh filename="package://umirtx_description/meshes/frame2.stl"/>
+    </geometry>
+  </collision>
+ </link>
+
+ <link name="frame3">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+    <mass value="1"/>
+    <inertia ixx="10"  ixy="0"  ixz="0" iyy="10" iyz="0" izz="10" />
+  </inertial>
+<visual>
+<origin xyz="0.127 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://umirtx_description/meshes/frame3.stl"/>
+    </geometry>
+    <material name="blue">
+      <color rgba="0.121 0.335 0.583 1.0"/>
+    </material>
+  </visual>
+<collision>
+<origin xyz="0.127 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://umirtx_description/meshes/frame3.stl"/>
+    </geometry>
+  </collision>
+ </link>
+
+ <link name="frame4">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+    <mass value="1"/>
+    <inertia ixx="10"  ixy="0"  ixz="0" iyy="10" iyz="0" izz="10" />
+  </inertial>
+<visual>
+<origin xyz="0.127 0 -0.09" rpy="0 0 0" />
+    <geometry>
+     <mesh filename="package://umirtx_description/meshes/frame4.stl"/>
+    </geometry>
+    <material name="cyan">
+      <color rgba="0.088 0.694 0.57 1.0"/>
+    </material>
+  </visual>
+<collision>
+<origin xyz="0.127 0 -0.09" rpy="0 0 0" />
+    <geometry>
+     <mesh filename="package://umirtx_description/meshes/frame4.stl"/>
+    </geometry>
+  </collision>
+ </link>
+
+ <link name="frame5">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+    <mass value="1"/>
+    <inertia ixx="10"  ixy="0"  ixz="0" iyy="10" iyz="0" izz="10" />
+  </inertial>
+<visual>
+<origin xyz="-0.0105 0 0" rpy="0 0 0" />
+    <geometry>
+     <mesh filename="package://umirtx_description/meshes/frame5.stl"/>
+    </geometry>
+    <material name="lightgreen">
+      <color rgba="0.165 0.994 0.555 1.0"/>
+    </material>
+  </visual>
+<collision>
+<origin xyz="-0.0105 0 0" rpy="0 0 0" />
+    <geometry>
+     <mesh filename="package://umirtx_description/meshes/frame5.stl"/>
+    </geometry>
+  </collision>
+ </link>
+
+ <link name="frame6">
+<inertial>
+<origin xyz="-0.0105 0 0" rpy="0 0 0" />
+    <mass value="1"/>
+    <inertia ixx="10"  ixy="0"  ixz="0" iyy="10" iyz="0" izz="10" />
+  </inertial>
+<visual>
+<origin xyz="0 0 -0.035" rpy="0 0 1.57079632679489662" />
+    <geometry>
+     <mesh filename="package://umirtx_description/meshes/frame6.stl"/>
+    </geometry>
+    <material name="lightyellow">
+      <color rgba="0.97 0.947 0.535 1.0"/>
+    </material>
+  </visual>
+<collision>
+<origin xyz="0 0 -0.035" rpy="0 0 1.57079632679489662" />
+    <geometry>
+     <mesh filename="package://umirtx_description/meshes/frame6.stl"/>
+    </geometry>
+  </collision>
+ </link>
+
+<link name="frame7B">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+    <mass value="1"/>
+    <inertia ixx="10"  ixy="0"  ixz="0" iyy="10" iyz="0" izz="10" />
+  </inertial>
+<visual>
+<origin xyz="0.093 0.01 -0.03" rpy="1.57079632679489662 0 0" />
+    <geometry>
+     <mesh filename="package://umirtx_description/meshes/frame7.stl"/>
+    </geometry>
+    <material name="lightskin">
+      <color rgba="0.983 0.744 0.742 1.0"/>
+    </material>
+  </visual>
+<collision>
+<origin xyz="0 0.03 0" rpy="1.57079632679489662 0 0" />
+    <geometry>
+     <mesh filename="package://umirtx_description/meshes/frame7.stl"/>
+    </geometry>
+  </collision>
+ </link>
+
+<link name="frametip">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+    <mass value="0.001"/>
+    <inertia ixx="1"  ixy="0"  ixz="0" iyy="1" iyz="0" izz="10" />
+  </inertial>
+<visual>
+<origin xyz="0.0 0.00 0.0" rpy="0 0 0" />
+    <geometry>
+    <box size="0.01 0.01 0.01" />
+    </geometry>
+    <material name="Black">
+      <color rgba="0.0 0.0 0.0 1.0"/>
+    </material>
+  </visual>
+<collision>
+<origin xyz="0 0.0 0.0" rpy="1.57079632679489662 0 0" />
+    <geometry>
+    <box size="0.01 0.01 0.01" />
+    </geometry>
+  </collision>
+ </link>
+
+<link name="frame7A">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+    <mass value="1"/>
+    <inertia ixx="10"  ixy="0"  ixz="0" iyy="10" iyz="0" izz="10" />
+  </inertial>
+<visual>
+<origin xyz="0.093 -0.01 0.03" rpy="-1.57079632679489662 0 0" />
+    <geometry>
+     <mesh filename="package://umirtx_description/meshes/frame7.stl"/>
+    </geometry>
+    <material name="lightskin">
+      <color rgba="0.983 0.744 0.742 1.0 1.0"/>
+    </material>
+  </visual>
+<collision>
+<origin xyz="0 0.03 0" rpy="1.57079632679489662 0 0" />
+    <geometry>
+     <mesh filename="package://umirtx_description/meshes/frame7.stl"/>
+    </geometry>
+  </collision>
+ </link>
+
+<link name="jointhelper">
+<inertial>
+<origin xyz="0 0 0" rpy="0 0 0" />
+    <mass value="1"/>
+    <inertia ixx="10"  ixy="0"  ixz="0" iyy="10" iyz="0" izz="10" />
+  </inertial>
+<visual>
+<origin xyz="0.0 0 0" rpy="0 0 0" />
+    <geometry>
+     <cylinder length="0.01" radius="0.01"/>
+    </geometry>
+    <material name="Cyan">
+      <color rgba="0 1.0 1.0 1.0"/>
+    </material>
+  </visual>
+<collision>
+<origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+     <cylinder length="0.01" radius="0.01"/>
+    </geometry>
+  </collision>
+ </link>
+
+<joint name="base_joint" type="fixed">
+   <origin xyz="0 0 0" rpy="0 0 0"/>
+   <parent link="base_link"/>
+   <child link="frame1"/>
+</joint>
+
+<joint name="joint1" type="prismatic">
+   <origin xyz="0.0 0 0" rpy="0 0 0"/>
+   <parent link="frame1"/>
+   <child link="frame2"/>
+   <axis xyz="0 0 1" />
+<dynamics damping="0.1" friction="0.01"/>
+<limit effort="3" velocity="1.0" lower="0.1" upper="1" />
+<safety_controller k_velocity="10" k_position="15" soft_lower_limit="0.2" soft_upper_limit="0.95" />
+</joint>
+
+<joint name="joint2" type="revolute">
+   <origin xyz="0.1088 0 0" rpy="0 0 0"/>
+   <parent link="frame2"/>
+   <child link="frame3"/>
+   <axis xyz="0 0 1" />
+<calibration rising="0.1"/>
+<dynamics damping="0.05" friction="0.1"/>
+<limit effort="3" velocity="1.0" lower="-3.14" upper="3.14" />
+<safety_controller k_velocity="10" k_position="15" soft_lower_limit="-1.9" soft_upper_limit="1.9" />
+</joint>
+
+<joint name="joint3" type="revolute">
+<origin xyz="0.254 0 0" rpy="0 0 0" />
+   <parent link="frame3"/>
+   <child link="frame4"/>
+   <axis xyz="0 0 1" />
+<calibration rising="0.1"/>
+<dynamics damping="0.05" friction="0.1"/>
+<limit effort="3" velocity="1.0" lower="-3.14" upper="3.14" />
+<safety_controller k_velocity="10" k_position="15" soft_lower_limit="-3.1" soft_upper_limit="3.1" />
+</joint>
+
+<joint name="joint4" type="revolute">
+<origin xyz="0.254 0 -0.1025" rpy="0 0 0" />
+   <parent link="frame4"/>
+   <child link="frame5"/>
+   <axis xyz="0 0 1" />
+<calibration rising="0.1"/>
+<dynamics damping="0.05" friction="0.1"/>
+<limit effort="3" velocity="1.0" lower="-3.14" upper="3.14" />
+<safety_controller k_velocity="10" k_position="15" soft_lower_limit="-3.1" soft_upper_limit="3.1" />
+</joint>
+
+<joint name="joint5" type="revolute">
+<origin xyz="0 0 0" rpy="1.57079632679489662 0 0" />
+   <parent link="frame5"/>
+   <child link="jointhelper"/>
+   <axis xyz="0 0 1" />
+<calibration rising="0.1"/>
+<dynamics damping="0.05" friction="0.1"/>
+<limit effort="3" velocity="1.0" lower="-1.6" upper="0.5" />
+<safety_controller k_velocity="10" k_position="15" soft_lower_limit="-1.57079632679489662" soft_upper_limit="0" />
+</joint>
+
+<joint name="joint6" type="revolute">
+<origin xyz="0.117 0 0" rpy="0 1.57079632679489662 0" />
+   <parent link="jointhelper"/>
+   <child link="frame6"/>
+   <axis xyz="0 0 1" />
+<calibration rising="0.1"/>
+<dynamics damping="0.05" friction="0.1"/>
+<limit effort="3" velocity="1.0" lower="-1.7" upper="1.7" />
+<safety_controller k_velocity="10" k_position="15" soft_lower_limit="-1.57079632679489662" soft_upper_limit="1.57079632679489662" />
+</joint>
+
+<joint name="joint7A" type="prismatic">
+   <origin xyz="0 0 0" rpy="0 -1.57079632679489662 0"/>
+   <parent link="frame6"/>
+   <child link="frame7A"/>
+   <axis xyz="0 0 1" />
+<dynamics damping="0.1" friction="0.01"/>
+<limit effort="3" velocity="1.0" lower="-0.01" upper="0.03" />
+<safety_controller k_velocity="10" k_position="15" soft_lower_limit="0.0" soft_upper_limit="0.02" />
+</joint>
+
+<joint name="joint7B" type="prismatic">
+   <origin xyz="0 0 0" rpy="0 -1.57079632679489662 0"/>
+   <parent link="frame6"/>
+   <child link="frame7B"/>
+   <axis xyz="0 0 1" />
+<dynamics damping="0.1" friction="0.01"/>
+<limit effort="3" velocity="1.0" lower="-0.03" upper="0.01" />
+<safety_controller k_velocity="10" k_position="15" soft_lower_limit="-0.2" soft_upper_limit="0" />
+</joint>
+
+<joint name="jointtip" type="fixed">
+<origin xyz="0.130 0.0 0.035" rpy="0 0 0" />
+   <parent link="frame6"/>
+   <child link="frametip"/>
+   <axis xyz="0 0 1" />
+<calibration rising="0.1"/>
+<dynamics damping="0.05" friction="0.1"/>
+<limit effort="3" velocity="1.0" lower="-3.14" upper="3.14" />
+<safety_controller k_velocity="10" k_position="15" soft_lower_limit="-3.1" soft_upper_limit="3.1" />
+</joint>
+
+</robot>
