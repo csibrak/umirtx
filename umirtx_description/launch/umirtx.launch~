@@ -1,9 +1,0 @@
-<launch>
-   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
-  
-
-  <node name="rviz" pkg="rviz" type="rviz"/>
-<param name="robot_description" command="$(find xacro)/xacro.py '$(find umirtx_description)/urdf/UMI_RTX_URDF.urdf'" />
-<param name="Fixed Frame" value="base_link"/>
-
-</launch>
