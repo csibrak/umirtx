@@ -1,0 +1,7 @@
+<launch>
+<node name="umirtxnode"
+        pkg="umirtx_hardware" type="umirtxnode" output="screen"
+        args="100
+	192.168.2.80
+             " />
+</launch>

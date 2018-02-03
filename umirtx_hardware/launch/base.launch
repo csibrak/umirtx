@@ -1,0 +1,20 @@
+<launch>
+
+  <include file="$(find umirtx_description)/launch/umirtx.launch" />
+   
+  
+  <node pkg="umirtx_base" type="umirtx_node" name="umirtx_node">
+    <rosparam>
+      # TODO: Specify these in code rather than here.
+      require:
+        publishers:
+          - status
+          - feedback
+          - imu/data_raw
+          - navsat/nmea_sentence
+        subscribers:
+          - cmd_drive
+    </rosparam>
+  </node>
+
+</launch>

@@ -1,11 +1,5 @@
 ﻿<robot name="UMI_RTX_BM14W4" >
-
  <link name="base_link"> 
-   <inertial>
-    <origin xyz="0 0 0." rpy="0 0 0"/>
-    <mass value="100"/>
-    <inertia ixx="1000"  ixy="0"  ixz="0" iyy="100" iyz="0" izz="100" />
-  </inertial>
 <visual>
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
@@ -22,7 +16,6 @@
     </geometry>
   </collision>
 </link>
-
  <link name="frame1"> 
 <inertial>
     <origin xyz="0 -0.045 0" rpy="0 0 0"/>
@@ -45,7 +38,6 @@
     </geometry>
   </collision>
 </link>
-
  <link name="frame2">
 <inertial>
 <origin xyz="0.06 0 0" rpy="0 0 0" />
@@ -68,7 +60,6 @@
     </geometry>
   </collision>
  </link>
-
  <link name="frame3">
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0" />
@@ -91,7 +82,6 @@
     </geometry>
   </collision>
  </link>
-
  <link name="frame4">
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0" />
@@ -114,7 +104,6 @@
     </geometry>
   </collision>
  </link>
-
  <link name="frame5">
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0" />
@@ -137,7 +126,6 @@
     </geometry>
   </collision>
  </link>
-
  <link name="frame6">
 <inertial>
 <origin xyz="-0.0105 0 0" rpy="0 0 0" />
@@ -160,7 +148,6 @@
     </geometry>
   </collision>
  </link>
-
 <link name="frame7B">
 <inertial>
 <origin xyz="0 0 0" rpy="0 0 0" />
@@ -193,16 +180,16 @@
 <visual>
 <origin xyz="0.0 0.00 0.0" rpy="0 0 0" />
     <geometry>
-    <box size="0.01 0.01 0.01" />
+    <box size="0.1 0.02 0.10" />
     </geometry>
     <material name="Black">
-      <color rgba="0.0 0.0 0.0 1.0"/>
+      <color rgba="0.0 0.0 0.0 0.3"/>
     </material>
   </visual>
 <collision>
-<origin xyz="0 0.0 0.0" rpy="1.57079632679489662 0 0" />
+<origin xyz="0 0.0 0.0" rpy="0 0 0" />
     <geometry>
-    <box size="0.01 0.01 0.01" />
+    <box size="0.11 0.021 0.11" />
     </geometry>
   </collision>
  </link>
@@ -345,7 +332,7 @@
 </joint>
 
 <joint name="jointtip" type="fixed">
-<origin xyz="0.130 0.0 0.035" rpy="0 0 0" />
+<origin xyz="0.0 0.00 0.08" rpy="0 0 0" />
    <parent link="frame6"/>
    <child link="frametip"/>
    <axis xyz="0 0 1" />

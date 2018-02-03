@@ -1,0 +1,12 @@
+<launch>
+  <!-- Joint state controller -->
+  <rosparam command="load" file="$(find joint_state_controller)/joint_state_controller.yaml" />
+  <rosparam command="load" file="$(find umirtx_hardware)/config/controllers.yaml" />
+  <!-- Controllers that come up started -->
+  <node name="default_controllers_spawner"
+pkg="controller_manager" type="spawner" output="screen"
+args="joint_state_controller
+ arm_controller
+ gripper_controller
+"/>
+</launch>

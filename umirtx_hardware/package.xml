@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package>
+  <name>umirtx_hardware</name>
+  <version>0.0.1</version>
+  <description>Final thesis(Bsc), UMI-RTX robot controller. Source of "Jackal_robot" used for this code. see here"http://wiki.ros.org/Robots/Jackal"</description>
+
+  <author email="tamas.csibrak@gmail.com">Tamás Csibrák</author>
+<maintainer email="tamas.csibrak@gmail.com">Tamás Csibrák</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">nothing</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>hardware_interface</build_depend>
+  <build_depend>realtime_tools</build_depend>
+  <build_depend>roslaunch</build_depend>
+  <build_depend>roslint</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>topic_tools</build_depend>
+
+  <run_depend>controller_manager</run_depend>
+  <run_depend>realtime_tools</run_depend>
+  <run_depend>topic_tools</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+
+  <export>
+  </export>
+</package>

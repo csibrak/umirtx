@@ -1,0 +1,30 @@
+<launch>
+
+  /*<include file="$(find umirtx_description)/launch/umirtx.launch" />*/
+   
+  
+  <node pkg="umirtx_hardware" type="umirtxnode" name="umirtxnode">
+    <rosparam>
+      # TODO: Specify these in code rather than here.
+      require:
+        publishers:
+          - status
+          - feedback
+          - imu/data_raw
+          - navsat/nmea_sentence
+        subscribers:
+          - cmd_drive
+    </rosparam>
+  </node>
+
+  <!-- Joint state controller -->
+  <rosparam command="load" file="$(find joint_state_controller)/joint_state_controller.yaml" />
+
+  <!-- Controllers that come up started -->
+  <node name="default_controllers_spawner"
+        pkg="controller_manager" type="spawner" output="screen"
+        args="joint_state_controller
+              arm_controller
+              " />
+
+</launch>

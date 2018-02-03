@@ -1,0 +1,7 @@
+open ftp.uw.hu
+zuzmofarok 
+012345
+cd meshes
+prompt
+mget *.stl
+quit

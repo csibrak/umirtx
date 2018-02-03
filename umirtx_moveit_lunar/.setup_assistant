@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: umirtx_description
+    relative_path: urdf/UMI_RTX_URDF.urdf
+  SRDF:
+    relative_path: config/UMI_RTX_BM14W4.srdf
+  CONFIG:
+    author_name: Tamas Csibrak
+    author_email: tamas.csibrak@gmail.com
+    generated_timestamp: 1517678392
