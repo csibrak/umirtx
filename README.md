@@ -309,19 +309,22 @@ cd ~/catkin_ws
 catkin_make
 
 start the simulation with fake_controllers:
-source ~/catkin_ws/devel/setup.bash
-roslaunch umirtx_moveit_lunar demo.launch
+source ~/catkin_ws/devel/setup.bash ;
+roslaunch umirtx_moveit_lunar demo.launch ;
 
 start rviz and hw support:
-source ~/catkin_ws/devel/setup.bash
-roslaunch umirtx_moveit_lunar xxx.launch
+source ~/catkin_ws/devel/setup.bash; 
+roslaunch umirtx_moveit_lunar xxx.launch;
 
 start hw::comm.layer, type into another terminal:
-roslaunch umirtx_bringup bringup_lunar.launch
+roslaunch umirtx_bringup bringup_lunar.launch ;
+
 /This can be killed by pushing Ctrl+c in the terminal. (the robot will stop immediately, according to the internal position controller)
 
+
 to start collision object demo, type into another terminal:
-rosrun pointcloud_demo pointcloud_demo
+rosrun pointcloud_demo pointcloud_demo ;
+
 /in this terminal just push 'w','s','d','a','+','-' for drawing collision objects to interact with the trajectory planning.
 
 
